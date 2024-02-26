@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#F4115E</item>
+    </style>
+    <style name="circular">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="shape_image">
+        <item name="cornerSize">10%</item>
+    </style>
+</resources>

@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAlignment="center"
+      android:layout_gravity="center_horizontal"
+      android:text="Crear Resenya"
+      android:textSize="40dp"
+      android:layout_marginBottom="20dp"
+      />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Titulo"
+      android:textColor="#000000"
+      android:textSize="16sp" />
+
+  <EditText
+      android:id="@+id/titulo"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#FFC045"
+      android:hint="Ingrese el titulo de la resnya"
+      android:inputType="text"
+      android:maxLines="1"
+      android:padding="8dp" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Texto"
+      android:textColor="#000000"
+      android:textSize="16sp" />
+
+  <EditText
+      android:id="@+id/texto"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#FFC045"
+      android:hint="Ingrese el texto"
+      android:inputType="text"
+      android:maxLines="1"
+      android:padding="8dp" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Valoracion"
+      android:textColor="#000000"
+      android:textSize="16sp" />
+
+  <EditText
+      android:id="@+id/valoracionEditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#FFC045"
+      android:hint="Ingrese la valoracion 0 - 5"
+      android:inputType="text"
+      android:maxLines="1"
+      android:padding="8dp" />
+
+
+  <Button
+      android:id="@+id/enviarButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="16dp"
+      android:background="#0A91AB"
+      android:text="Enviar"
+      android:textColor="#FFFFFF"
+      android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bot_home"
+        android:background="@drawable/nav_item_background"
+        android:icon="@drawable/home"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/lugares"
+        android:background="@drawable/nav_item_background"
+        android:icon="@drawable/info"
+        android:title="Lugares" />
+
+    <item
+        android:id="@+id/resenyas"
+        android:background="@drawable/nav_item_background"
+        android:icon="@drawable/person"
+        android:title="Resenyas"
+        />
+</menu>

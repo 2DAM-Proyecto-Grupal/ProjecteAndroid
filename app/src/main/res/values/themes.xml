@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Proyecto" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/azul_elegido</item>
+        <item name="colorSecondary">@color/amarillo_elegido</item>
+        <item name="android:windowBackground">@color/amarillo_elegido</item>
+        <item name="android:background"></item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="Theme.Proyecto" parent="Base.Theme.Proyecto" />
+
+    <style name="Theme.ProyectoNomadas" parent="Base.Theme.Proyecto">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>
