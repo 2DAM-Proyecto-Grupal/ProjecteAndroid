@@ -2,6 +2,7 @@ package com.example.proyecto.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.proyecto.API.InterfaceAPI
 import com.example.proyecto.R
@@ -52,17 +53,30 @@ class LoginActivity : AppCompatActivity() {
 
     private fun loginUser(query: String, nombre: String, password: String) {
         CoroutineScope(Dispatchers.IO).launch {
-            val call = getRetrofit().create(InterfaceAPI::class.java).login("$query/$nombre/$password")
-            user = call.body()
-            println(user?.uid)
-            runOnUiThread {
-                if (call.isSuccessful) { //Si hay contenido dentro
-                    if (user?.uid != null) {
-                        loginSucces = true
+            try {
+
+
+                val call =
+                    getRetrofit().create(InterfaceAPI::class.java).login("$query/$nombre/$password")
+                user = call.body()
+                println(user?.uid)
+                runOnUiThread {
+                    if (call.isSuccessful) { //Si hay contenido dentro
+                        if (user?.uid != null) {
+                            loginSucces = true
+                        } else {
+                            loginSucces = false
+                        }
                     } else {
-                        loginSucces = false
                     }
-                } else {
+                }
+            }catch (e:Exception){
+                runOnUiThread {
+                    Toast.makeText(
+                        applicationContext,
+                        "Este usuario no esta registrado",
+                        Toast.LENGTH_LONG
+                    ).show()
                 }
             }
 
