@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_profile -> {
                 // Reemplaza el contenido del contenedor con el fragmento del perfil
                 supportFragmentManager.beginTransaction()
-                    .replace(R.id.fragment, ProfileFragment())
+                    .replace(R.id.fragment, ProfileFragment.newInstance(usuario))
                     .commit()
 
             }
