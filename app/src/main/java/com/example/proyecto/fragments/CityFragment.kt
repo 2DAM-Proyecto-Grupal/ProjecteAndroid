@@ -33,8 +33,8 @@ class CityFragment : Fragment() {
         binding = FragmentCityBinding.inflate(inflater, container, false)
 
         binding.txtNombre.text = ciudad.nombre.toUpperCase()
-        binding.txtCountry.text = "Pais: ${ciudad.country}"
-        binding.txtRegion.text = "Continente: ${ciudad.region}"
+        binding.txtCountry.text = "Pais:\n ${ciudad.country}"
+        binding.txtRegion.text = "Continente:\n ${ciudad.region}"
         binding.prgCash.progress = ciudad.cashlessSociety
         binding.prgCost.progress = ciudad.costLiving
         binding.prgFree.progress = ciudad.freeSpeech
